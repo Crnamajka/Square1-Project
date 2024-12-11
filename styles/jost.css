@@ -1,0 +1,22 @@
+@font-face {
+   font-family: Jost;
+   src: url("./../assets/fonts/Jost/static/Jost-Regular.ttf");
+}
+
+@font-face {
+  font-family: Jost;
+  src: url("./../assets/fonts/Jost/static/Jost-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url("./../assets/fonts/Jost/static/Jost-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url("./../assets/fonts/Jost/static/Jost-Black.ttf");
+  font-weight: 900;
+}

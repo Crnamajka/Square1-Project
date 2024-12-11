@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart page</title>
+    <link rel="stylesheet" href="/styles/cartpage.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="top">
+            <div>
+                <div><img src="/assets/img/svg/Sqlogo.svg" alt="Square Academy Store Logo" width="120" height="37" class="img-logo"></div>
+                <div class="icons">
+                    <span><img src="/assets/img/svg/lupa.svg" alt="search button"></span>
+                    <span class="person"><img src="/assets/img/svg/person.svg" alt="profile button"></span>
+                    <div class="dynamic-cart">
+                        <span id="open-cart-btn"><img src="/assets/img/svg/shopping_basket.svg" alt="shopping cart button"></span>
+                        <span id="cart-count">1</span>
+                    </div>
+                    <span class="menu-toggle"><img src="/assets/img/svg/menu.svg" alt="menu toggle"></span>
+                </div>
+            </div>
+        </div>
+        <nav class="top" id="top-nav">
+            <ul>
+                <li><div class="person-nav">
+                    <img src="/assets/img/svg/person.svg" alt="">
+                    <span>MY PROFILE</span>
+                </div></li>
+                <li><a href="/Shoppage.html"><span>WOMEN</span></a></li>
+                <li><span>MEN</span></li>
+                <li><span>KIDS</span></li>
+                <li><span>ACCESORIES</span></li>
+                <li><span>ABOUT US</span></li>
+                <li><span>NEWS</span></li>
+                <li><span>CONTACT US</span></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <div class="first-container">
+            <section class="intro-content">
+                <p class="cart-title">Shopping Cart</p>
+                <div class="root">
+                    <span>Home</span>
+                    <span><img src="/assets/img/svg/iconos/mayor.svg" alt=""></span>
+                    <span>Your Shopping Cart</span>
+                </div>
+            </section>
+            <div class="all">
+                <table class="desktop-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product">
+                                <img src="/assets/img/cart-image.png" alt="">
+                                <div class="product-info">
+                                    <p class="principal">Mini Dress With<br>Ruffled Straps</p>
+                                    <div class="secondary">
+                                        <p>Color: Red</p>
+                                        <a href="#" class="btn">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p>14.90</p>
+                            </td>
+                            <td>
+                                <div class="quantity">
+                                <span><img src="/assets/img/svg/iconos/bold-.svg" alt=""></span>
+                                <span class="number">01</span>
+                                <span><img src="/assets/img/svg/iconos/bold+.svg" alt=""></span>
+                                </div>
+                            </td>
+                            <td>
+                                <p>14.90</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <div class="mobile-table">
+                        <div class="fila">
+                            <div class="column1">
+                                <div class="header">Product</div>
+                                <div class="content">
+                                    <div class="product">
+                                        <img src="/assets/img/cart-image.png" alt="">
+                                        <div class="product-info">
+                                            <p class="principal">Mini Dress With<br>Ruffled Straps</p>
+                                            <div class="secondary">
+                                                <p>Color: Red</p>
+                                                <a href="#" class="btn">Remove</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="column">
+                                <div class="header">Price</div>
+                                <div class="content"><p class="price">14.90</p></div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="column">
+                                <div class="header">Quantity</div>
+                                <div class="content">
+                                    <div class="quantity">
+                                        <span><img src="/assets/img/svg/iconos/bold-.svg" alt=""></span>
+                                        <span class="number">01</span>
+                                        <span><img src="/assets/img/svg/iconos/bold+.svg" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="column">
+                                <div class="header">Total</div>
+                                <div class="content"><p class="price">14.90</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </table>
+                <section class="bottom">
+                    <div class="wrap">
+                        <div class="wrap-child">
+                            <img src="/assets/img/svg/iconos/check.svg" alt="">
+                            <span>For</span>
+                            <span>10.00</span>
+                            <span>Please Wrap The Product</span>
+                        </div>
+                    </div>
+                    <div class="subtotal">
+                        <span>Subtotal</span>
+                        <span class="number">100.00</span>
+                    </div>
+                    <a href="/checkout.html"><button>Checkout</button></a>
+                    <a href="">View Cart</a>
+                </section>
+            </div>
+        </div>
+    </main>
+    <section id="mini-cart">
+        <div class="text-primary">
+            <div class="first">
+                <p>Shopping Cart</p>
+                <button id="close-cart-btn"><img src="/assets/img/svg/iconos/Cancel.svg" alt=""></button>
+            </div>
+            <div class="secondary">
+                <span>Buy</span>
+                <span><strong>122.35</strong></span>
+                <span>More And Get</span>
+                <span><strong>Free Shipping</strong></span>
+            </div>
+        </div>
+        <div class="product-sec">
+            <img src="/assets/img/cart-image.png" alt="">
+            <div class="product-info">
+                <p><strong>Denim Jacket</strong></p>
+                <p>Color: Red</p>
+                <p>14.90</p>
+                <div class="quantity">
+                    <span><img src="/assets/img/svg/iconos/bold-.svg" alt=""></span>
+                    <span class="number">01</span>
+                    <span><img src="/assets/img/svg/iconos/bold+.svg" alt=""></span>
+                </div>
+                
+            </div>
+        </div>
+        <section class="bottom">
+            <div class="wrap">
+                <div class="wrap-child">
+                    <img src="/assets/img/svg/iconos/check.svg" alt="">
+                    <span>For</span>
+                    <span>10.00</span>
+                    <span>Please Wrap The Product</span>
+                </div>
+            </div>
+            <div class="subtotal">
+                <span>Subtotal</span>
+                <span class="number">100.00</span>
+            </div>
+            <a href="/checkout.html"><button>Checkout</button></a>
+            <a href="">View Cart</a>
+        </section>
+   </section>
+   <script src="/scripts/mini-cart.js"></script>
+    <script src="/scripts/menu-toggle.js"></script>
+</body>
+</html>

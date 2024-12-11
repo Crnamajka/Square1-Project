@@ -1,0 +1,250 @@
+@import "/styles/index.css";
+@import "/styles/sq1.css";
+
+body{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.first-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+    
+}
+
+.intro-content{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 12px;
+    margin-top: 45px;
+    margin-bottom: 65px;
+}
+
+.intro-content .root{
+    font-family: Jost;
+    font-size: 15px;
+}
+
+.intro-content .cart-title{
+    font-family: Volkhov;
+    font-size: 42px;
+}
+
+
+
+.desktop-table {
+    margin: 0 auto;
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+.mobile-table{
+    display: none;
+    width: 100%;
+}
+.mobile-table  .header{
+    height: 50px;
+}
+.mobile-table .column{
+    display: flex;
+}
+.mobile-table .column1{
+    margin-bottom: 10px;
+}
+.desktop-table th,
+.mobile-table .header{
+    font-family: Volkhov;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.desktop-table th{
+    height: 68px;
+}
+
+.desktop-table thead tr th{
+    text-align: left;
+    vertical-align: top;
+}
+
+.desktop-table tbody tr{
+    border-top: 1px solid var(--separate_line);
+    border-bottom: 1px solid var(--separate_line);
+}
+
+.desktop-table tbody tr > td:nth-child(-n+3){
+    text-align: left;
+    vertical-align: top;
+    width: 415px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-right: 45px;
+}
+
+main table tbody tr > td:last-child{
+    vertical-align: top;
+    padding-top: 30px;
+}
+
+.product{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ column-gap: 14px;
+}
+
+.product .product-info  .principal{
+    font-family: Volkhov;
+    font-size: 22px;
+    line-height: 28.38px;
+}
+
+.product .secondary{
+    font-family: Poppins;
+    font-size: 22px;
+    line-height: 42px;
+    color: var(--ghost_color);
+    border: none;
+    outline: none;
+}
+
+.product .secondary .btn:active, .btn:focus, .btn:hover, .btn:visited{
+    color: var(--ghost_color);
+    border: none;
+    outline: none;
+}
+
+.desktop-table tbody tr > td:nth-child(2),
+.desktop-table tbody tr > td:nth-child(4),
+.mobile-table .content .price{
+    font-family: Volkhov;
+    font-size: 22px;
+    line-height: 32px;
+    
+}
+
+main table tbody tr > td:nth-child(2) p::before,
+main table tbody tr > td:nth-child(4) p::before,
+.mobile-table .content .price::before{
+    content: "$";
+}
+
+main table tbody tr .quantity,
+.mobile-table .content .quantity{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: Poppins;
+    color: var(--separate_line);
+    font-size: 25.02px;
+    width: 119px;
+    height: 41.3px;
+    place-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--medium_grey);
+    
+}
+
+main table tbody tr .quantity > span:first-child,
+main table tbody tr .quantity > span:nth-child(3){
+    display: flex;
+    align-content: center;
+}
+
+.all > section:last-child{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+main section .wrap{
+    height: 58px;
+    border-bottom: 1px solid var(--separate_line);
+}
+
+section .wrap .wrap-child{
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    font-family: Poppins;
+    font-size: 22px;
+    color: var(--medium_grey);
+}
+
+main section .wrap .wrap-child > span:nth-child(3){
+    color: black;
+}
+
+main section .wrap > span:nth-child(3)::before{
+    content: "$";
+}
+
+main section .subtotal{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 47px;
+    font-family: Volkhov;
+    font-size: 22px;
+}
+
+main section .subtotal > span:last-child::before{
+    content: "$";
+}
+
+.mobile-table .content .quantity{
+    display: grid;
+    align-content: center;
+}
+main section button{
+    font-family: Poppins;
+    font-size: 16px;
+    height: 66px;
+    background-color: var(--primary_color);
+    color: var(--color_white);
+    border: transparent;
+    margin-top: 28px;
+    width: 100%;
+}
+
+main section a{
+    font-family: Volkhov;
+    font-size: 22px;
+    text-align: center;
+    color: var(--general);
+    margin-top: 18px;
+}
+
+@media only screen and (max-width: 845px){
+
+    .desktop-table{
+        display: none;
+    }
+
+    .mobile-table{
+        display: grid;
+    }
+    
+    .all > section:last-child{
+        width: 100%;
+        display: grid;
+        grid-template-rows: 40px;
+    }
+
+    section .wrap{
+        height: 58px;
+    }
+
+    section .wrap .wrap-child{
+        font-size: 16px;
+    }
+}

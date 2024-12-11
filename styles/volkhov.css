@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Volkhov;
+    src: url("./../assets/fonts/Volkhov/Volkhov-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: Volkhov;
+    src: url("./../assets/fonts/Volkhov/Volkhov-Bold.ttf");
+    font-weight: bold;
+  }
+  

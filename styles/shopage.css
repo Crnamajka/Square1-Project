@@ -1,0 +1,381 @@
+@import "/styles/index.css";
+@import "/styles/sq1.css";
+
+
+
+body{
+    display: grid;
+    width: 100%;
+    padding: 0 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+}
+
+section .choose {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 12px;
+    justify-content: space-between;
+}
+section .choose .fil-icon{
+    display: none;
+}
+section .choose .fil-icon .filter-tag{
+    background-color: transparent;
+    border: 0;;
+}
+section .choose .fil-icon .filter-tag img{
+    width: 18px;
+    
+}
+
+section .choose .format .format-option{
+    padding: 2px;
+    width: 34px;
+    height: 34px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-color: transparent;
+}
+
+section .choose .best-sell span{
+    font-family: Volkhov;
+    font-size: 16px;
+}
+
+
+section .shop-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+    padding: 12px;
+
+}
+
+section .shop-cards .shop-card {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+}
+section .shop-cards .shop-card .shop-img .soldout{
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+}
+#sold{
+    position: absolute;
+    bottom: 170px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: rgba(177, 177, 177, 1);
+    color: var(--color_white);
+    font-family: Jost;
+    font-size: 10px; 
+    font-weight: 900;
+    border-radius: 50%; 
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+#sold p{
+    width: 29px;
+    height: 24px;
+    text-align: center;
+}
+section .shop-cards .shop-card .shop-img {
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    height: 100%;
+    display: block;
+}
+
+section .shop-cards .shop-card .shop-img img {
+        padding: 0;
+        margin: 0;
+        width: 302px; 
+        height: 402.61px; 
+        display: block;
+        object-fit: cover;
+}
+
+section .shop-cards .product-name{
+    padding-top: 16px;
+    font-family: volkhov;
+    font-size: 16px;
+}
+
+section .shop-cards .card-content {
+    display: grid;
+    grid-row-gap: 12px ;
+}
+section .shop-cards .card-content p:hover{
+    color: var(--ghost_color);
+}
+section .shop-cards .card-content a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section .shop-cards .card-content .price{
+    font-family: Jost;
+    font-size: 16px;
+    padding-bottom: 4px;
+
+}
+
+section .shop-cards .card-content .price::before{
+    content: "$";
+}
+
+section .shop-cards .card-content .variations{
+    display: flex;
+    gap: 8px;
+}
+section .shop-cards .card-content .variations > span:first-child{
+    border: 1px solid #000000;
+    box-shadow: inset 0 0 0 4px white;
+}
+section .shop-cards .card-content .variations span{
+    height: 24px;
+    width: 24px;
+    background-color: currentColor;
+    border-radius: 50%;
+}
+
+
+section .page-number {
+    display: flex;
+    padding-top: 54px;
+    padding-bottom: 68px;
+    justify-content: center;
+    gap: 2px;
+}
+
+section .page-number button {
+    font-family: Jost;
+    font-size: 16px;
+    border-radius: 9999px;
+    border: 0;
+    background-color: transparent;
+}
+
+section .page-number .selected{
+    background-color: #f3f3f3;
+}
+
+section .page-number span {
+    align-content: center;
+}
+
+aside {
+    padding: 28px;
+
+   
+}
+
+aside .filters {
+    font-family: Volkhov;
+    font-size: 30px;
+}
+
+aside .title{
+    font-family: Volkhov;
+    font-size: 18px;
+}
+
+aside .size {
+    padding-top: 32px;
+}
+
+
+aside .size .size-buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 42px);
+    justify-content: stretch;
+    padding-top: 18px;
+    column-gap: 10px;
+    row-gap: 4px;
+}
+
+aside .size .size-buttons button{
+    font-family: Jost;
+    font-size: 16px;
+    padding: 2px;
+    width: 42.09px;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: var(--ghost_color);  
+    background-color: transparent;
+    border-width: thin;
+    border-color: var(--ghost_color); 
+}
+
+aside .size .size-buttons button:hover{
+    color: var(--color_white);
+    background-color: var(--ghost_color);
+}
+
+aside .colors {
+    padding-top: 30px;
+}
+
+aside .colors .color {
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    row-gap: 10px;
+    padding-top: 18px;
+   
+}
+
+aside .colors .color span{
+    height: 30px;
+    width: 30px;
+    background-color: currentColor;
+    border-radius: 50%;
+    border-color: var(--outline_color);
+}
+aside .prices {
+    padding-top: 30px;
+    
+}
+
+aside .prices .price-range{
+    display: grid;
+    grid-row-gap: 10px ;
+    font-family: Jost;
+    font-size: 16px;
+    padding-top:18px ;
+    color: var(--ghost_color);
+}
+
+
+aside .brands {
+    padding-top: 30px;
+}
+
+aside .brands .brand{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px ;
+    row-gap: 10px;
+    padding-top:18px ;
+    color: var(--ghost_color);
+    max-width: 240px;
+}
+
+aside .brands .brand .font-1{
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+aside .brands .brand .font-2{
+    font-family: Jost;
+    font-size: 16px;
+}
+
+aside .down {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside .down button {
+    background-color: transparent;
+    border-width: 0;
+}
+
+aside .collections {
+    padding-top: 30px;
+}
+
+aside .collections .collection {
+    display: grid;
+    grid-row-gap: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    padding-top: 18px;
+    color: var(--ghost_color);
+
+}
+
+
+aside .tags {
+    padding-top: 28px;
+}
+
+aside .tags .tag{
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 10px ;
+    row-gap: 10px;
+    padding-top:18px ;
+    color: var(--ghost_color);
+    font-family: Jost;
+    font-size: 16px;
+}
+
+@media (max-width:690px){
+    header{
+        position: fixed; /* Hace que el header permanezca inmóvil */
+        top: 0; /* Fija el header en la parte superior */
+        left: 0; /* Alinea el header al lado izquierdo */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        /* Altura del header, ajusta según tu diseño */
+        background-color: var(--color_white);
+        z-index: 100; /* Asegura que esté encima del contenido */
+        padding: 0 20px;
+    }
+    main{
+        padding-top: 117.67px;
+        grid-template-columns: 1fr;
+    }
+    #fil {
+        position: fixed; 
+        top: 117.67px;
+        left: 0;
+        z-index: 100; 
+        background-color: white; /* Fondo sólido para cubrir el contenido */
+        width: 300px; /* Ajusta según tu diseño */
+        height: calc(100% - 117.67px); /* Ocupa todo el alto de la ventana */
+        overflow-y: auto; /* Agrega scroll interno si el contenido es más grande que la ventana */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para destacar el aside */
+        display: none;
+        padding-right: 12px;
+        
+    }
+    #fil.active {
+        display: block;
+     }
+    section .choose{
+        position: relative; /* Asegura que `z-index` funcione correctamente en este elemento */
+        z-index: 1;
+        padding-left: 14px;
+    }
+    section .choose .fil-icon{
+        display: block;
+    }
+    
+    
+}
+@media (max-width:970px){
+    section .choose .format{
+        display: none;
+    }
+    section .shop-cards{
+        justify-items: center;
+    }
+    
+}
+
+
+

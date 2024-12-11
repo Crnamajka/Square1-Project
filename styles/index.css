@@ -1,0 +1,48 @@
+@import "/styles/reset.css";
+@import "/styles/fonts.css";
+@import "/styles/shadows.css";
+
+
+:root{
+    --max_main_width: 1280px;
+    --color-black: #323334;
+    --primary_color: #ED1C24;
+    --surface_color: #fcfcfc;
+    --secondary_color: #A86A3D;
+    --border_color: #F8CCCC;
+    --background_color: #FDEFEE;
+    --letter_color: #FF706B;
+    --secondary_surface_color: #dbd0cc;
+    --button-background: #fafafa;
+    --outline_color: #e5e5e5;
+    --ghost_color: #8a8a8a;
+    --color_white: #ffffff;
+    --opacity_color: #EEEEEE;
+    --medium_grey: rgba(138, 138, 138, 1);
+    --separate_line: rgba(0, 0, 0, 0.39);
+    --general: rgba(0, 0, 0, 1);
+    --dark-color: rgba(72, 72, 72, 1);
+    --form-color: rgba(138, 138, 138, 1);
+    --background_form: rgba(245, 245, 245, 1);
+    --min-box-width: 400px;
+}
+
+button{
+    font-family: roboto;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 8px 16px;
+}
+button.primary{
+    background-color: var(--primary_color);
+    color: white;
+    border-color: var(--primary_color);
+}
+button.text{
+    color: var(--primary_color);
+    border-color: var(--primary_color);
+    background-color: transparent;
+}
+
+
+
